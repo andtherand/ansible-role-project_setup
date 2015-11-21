@@ -1,0 +1,7 @@
+---
+- name: create project folders
+  file: path={{ item }} state=directory owner="{{ project_user }}" group="{{ project_folder_group }}"
+  with_items: "{{ project_folders }}"
+  tags:
+    - project-setup
+    - folders
