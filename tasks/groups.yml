@@ -1,0 +1,7 @@
+---
+- name: create groups
+  group: name={{ item }} state=present
+  with_items: '{{ project_user_groups }}'
+  tags:
+    - project-setup
+    - groups

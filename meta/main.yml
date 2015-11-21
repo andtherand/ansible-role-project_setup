@@ -1,0 +1,15 @@
+---
+dependencies: []
+galaxy_info:
+  author: "Andy Ruck"
+  categories:
+    - development
+  company: mychiara
+  description: >
+    Creates users, groups and sets up the project folder structure
+  license: "license (GPLv2)"
+  min_ansible_version: 1.2
+  platforms:
+    - name: Ubuntu
+      versions:
+        - trusty
