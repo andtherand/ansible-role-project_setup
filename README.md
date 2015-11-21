@@ -10,20 +10,20 @@ None.
 
 The following variables are available:
 
-```
+```yaml
 project_user: mychiara
 ```
 String: The project user you want to be the owner of the folders and files you are using.
 Creates a user with a home directory: e.g. ```/home/mychiara```.
 No default, because it's highly project specific
 
-```
+```yaml
 project_folder_group: 'www-data'
 ```
 String: The group a specific folder is owned by. 
 No default, because it's highly project specific
 
-```
+```yaml
 project_user_groups: 
   - root
   - deploy
@@ -32,7 +32,7 @@ project_user_groups:
 Array: The list of groups the above mentioned user is part of.
 Again there are no defaults.
 
-```
+```yaml
 project_folders: 
   - /home/mychiara/my_project
   - /home/mychiara/my_project_data
@@ -52,7 +52,8 @@ The following tags are available:
 ## Example playbook
 
 
-```
+```yaml
+---
 - name: create-project-structure
   hosts: all
   remote_user: root
